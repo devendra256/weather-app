@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="card">
+        <div id="search">
+          <input id="search-box" type="text" placeholder="search your city here..." />
+          <button id="search-btn">
+            <img id="search-img" src="/images/search.png" alt="search-image" />
+          </button>
+        </div>
+        <div class="error">
+          <p>Oops! Invalid City ☹️</p>
+        </div>
+        <div class="weather weather-data">
+          <img src="/images/drizzle.png" id="weather-img" />
+          <p class="temp">28°C</p>
+          <p class="city">Mathura</p>
+        </div>
+
+        <div class="details weather-data">
+          <div class="humidity">
+            <img src="/images/humidity.png" alt="humidity" />
+            <div class="data">
+                <p class="main-data humidity-percent">38%</p>
+                <p class="data-title">Humidity</p>
+            </div>
+          </div>
+
+          <div class="wind weather-data">
+            <img src="/images/wind.png" alt="wind-speed" />
+            <div class="data">
+                <p class="main-data wind-speed">11.35 km/h</p>
+                <p class="data-title">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
